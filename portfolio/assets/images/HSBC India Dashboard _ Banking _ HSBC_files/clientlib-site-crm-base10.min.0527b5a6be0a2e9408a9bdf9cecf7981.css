@@ -1,0 +1,107 @@
+.dccKYCModal__container{color:#333;font-size:16px;font-size:1.6rem}
+.dccKYCModal__container i{display:inline-block}
+.dccKYCModal__container .dccCRMModal__flex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex}
+.dccKYCModal__container .dccKYCModal__headingText{font-size:28px;font-size:2.8rem;font-weight:400}
+.dccKYCModal__container .dccCRMModal__text--top{margin-top:10px;margin-top:1rem}
+.dccKYCModal__container .dccCRMModal__text--top2{margin-top:20px;margin-top:2rem}
+.dccKYCModal__container .dccKYCModal__text--top3{margin-top:30px;margin-top:3rem}
+.dccKYCModal__container .dccCRMModal__text--large{font-size:23px;font-size:2.3rem}
+.dccKYCModal__container .dccCRMModal__text--left{padding-left:30px;padding-left:3rem}
+.dccKYCModal__container .dccCRMModal__text--box{background-color:#eee;display:inline-block;padding:10px;padding:1rem}
+.dccKYCModal__container .dccCRMModal__warning--box{background-color:#ebeff4;border:1px solid #acbdce;padding:16px 20px;padding:1.6rem 2rem}
+.dccKYCModal__container .dccCRMModal__warning--box2{font-size:0}
+.dccKYCModal__container .dccCRMModal__warning--box2 span{font-size:16px;font-size:1.6rem}
+.dccKYCModal__container .dccCRMModal__error--box{background-color:#f9f2f3;border:1px solid #db0011;padding:16px 20px;padding:1.6rem 2rem}
+.dccKYCModal__container .dccCRMModal__wrapper--hide{display:none !important}
+.dccKYCModal__container .dccCRMModal__unable--font{color:#f41010;margin-right:5px;margin-right:.5rem}
+.dccKYCModal__container .dccCRMModal__icon{display:inline-block;font-size:18px;font-size:1.8rem}
+.dccKYCModal__container .dccCRMModal__flex--text{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.dccKYCModal__container .dccCRMModal__error{height:initial;width:20px;width:2rem}
+.dccKYCModal__container .dccCRMModal__iconInformation{width:20px;width:2rem}
+.dccKYCModal__container .dccCRMModa__link{display:inline;color:#333;text-decoration:none;font-size:0}
+.dccKYCModal__container .dccCRMModa__link span{font-size:16px;font-size:1.6rem}
+.dccKYCModal__container .dccCRMModa__link i{vertical-align:baseline}
+.dccKYCModal__container .dccCRMModal__link--text{text-decoration:underline;font-size:16px;font-size:1.6rem}
+.dccKYCModal__container .dccCRMModal__icon--group{height:initial;width:27px;width:2.7rem}
+.dccKYCModal__container .dccCRMModal__postion{position:relative;top:-2px}
+.dccKYCModal__container .dccCRMModal__img{width:16px;width:1.6rem;height:16px;height:1.6rem}
+.dccKYCModal__container .dccCRMModal__imgLarge{width:24px;width:2.4rem;height:24px;height:2.4rem}
+.dccKYCModal__container .dccKYCModal__wrapper--top{margin-top:40px;margin-top:4rem}
+.dccKYCModal__container .dccCRMModal__icon--gap{margin-right:10px;margin-right:1rem}
+.dccKYCModal__container .dccCRMModal__text--jade{font-weight:600}
+.dccKYCModal__container .dccCRMModal__text--job{font-weight:300}
+.dccKYCModal__container .dccCRMModal__text--job:lang(en){font-family:"UniversNextforHSBC-Light","Arial",sans-serif}
+.dccKYCModal__container .dccKYCModal__text--notice{line-height:150%}
+.dccKYCModal__container .dccCRMModal__imgLarge--height{height:24px;height:2.4rem}
+.dccCRMModal__container{color:#333;font-size:16px;font-size:1.6rem}
+.dccCRMModal__container i{display:inline-block}
+.dccCRMModal__container .dccCRMModal__flex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex}
+.dccCRMModal__container .dccCRMModal__headingText{font-size:28px;font-size:2.8rem;font-weight:400}
+.dccCRMModal__container .dccCRMModal__text--top{margin-top:10px;margin-top:1rem}
+.dccCRMModal__container .dccCRMModal__text--top2{margin-top:20px;margin-top:2rem}
+.dccCRMModal__container .dccCRMModal__text--top3{margin-top:30px;margin-top:3rem}
+.dccCRMModal__container .dccCRMModal__text--large{font-size:23px;font-size:2.3rem}
+.dccCRMModal__container .dccCRMModal__text--left{padding-left:30px;padding-left:3rem}
+.dccCRMModal__container .dccCRMModal__text--box{background-color:#eee;display:inline-block;padding:10px;padding:1rem}
+.dccCRMModal__container .dccCRMModal__warning--box{background-color:#ebeff4;border:1px solid #acbdce;padding:16px 20px;padding:1.6rem 2rem}
+.dccCRMModal__container .dccCRMModal__warning--box2{font-size:0}
+.dccCRMModal__container .dccCRMModal__warning--box2 span{font-size:16px;font-size:1.6rem}
+.dccCRMModal__container .dccCRMModal__error--box{background-color:#f9f2f3;border:1px solid #db0011;padding:16px 20px;padding:1.6rem 2rem}
+.dccCRMModal__container .dccCRMModal__wrapper--hide{display:none !important}
+.dccCRMModal__container .dccCRMModal__unable--font{color:#f41010;margin-right:5px;margin-right:.5rem}
+.dccCRMModal__container .dccCRMModal__icon{display:inline-block;font-size:18px;font-size:1.8rem}
+.dccCRMModal__container .dccCRMModal__flex--text{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;word-break:break-all}
+.dccCRMModal__container .dccCRMModal__text--afterIcon{padding-top:4px}
+.dccCRMModal__container .dccCRMModal__error{height:initial;width:20px;width:2rem}
+.dccCRMModal__container .dccCRMModal__iconInformation{width:20px;width:2rem}
+.dccCRMModal__container .dccCRMModa__link{display:inline;color:#333;text-decoration:none;font-size:0}
+.dccCRMModal__container .dccCRMModa__link span{font-size:16px;font-size:1.6rem}
+.dccCRMModal__container .dccCRMModa__link i{vertical-align:baseline}
+.dccCRMModal__container .dccCRMModal__link--text{text-decoration:underline;font-size:16px;font-size:1.6rem}
+.dccCRMModal__container .dccCRMModal__icon--group{height:initial;width:27px;width:2.7rem}
+.dccCRMModal__container .dccCRMModal__postion{position:relative;top:-2px}
+.dccCRMModal__container .dccCRMModal__img{width:16px;width:1.6rem;height:16px;height:1.6rem}
+.dccCRMModal__container .dccCRMModal__imgLarge{width:24px;width:2.4rem;height:24px;height:2.4rem}
+.dccCRMModal__container .dccCRMModal__wrapper--top{margin-top:40px;margin-top:4rem}
+.dccCRMModal__container .dccCRMModal__icon--gap{margin-right:10px;margin-right:1rem}
+.dccCRMModal__container .dccCRMModal__text--jade{font-weight:600}
+.dccCRMModal__container .dccCRMModal__text--job{font-weight:300}
+.dccCRMModal__container .dccCRMModal__text--job:lang(en){font-family:"UniversNextforHSBC-Light","Arial",sans-serif}
+.dccCRMModal__container .dccCRMModal__text--notice{line-height:150%}
+.dccCRMModal__container .dccCRMModal__imgLarge--height{height:24px;height:2.4rem}
+.dccCRMModal__container{color:#333;font-size:16px;font-size:1.6rem}
+.dccCRMModal__container i{display:inline-block}
+.dccCRMModal__container .dccCRMModal__flex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex}
+.dccCRMModal__container .dccCRMModal__headingText{font-size:28px;font-size:2.8rem;font-weight:400}
+.dccCRMModal__container .dccCRMModal__text--top{margin-top:10px;margin-top:1rem}
+.dccCRMModal__container .dccCRMModal__text--top2{margin-top:20px;margin-top:2rem}
+.dccCRMModal__container .dccCRMModal__text--top3{margin-top:30px;margin-top:3rem}
+.dccCRMModal__container .dccCRMModal__text--large{font-size:23px;font-size:2.3rem}
+.dccCRMModal__container .dccCRMModal__text--left{padding-left:30px;padding-left:3rem}
+.dccCRMModal__container .dccCRMModal__text--box{background-color:#eee;display:inline-block;padding:10px;padding:1rem}
+.dccCRMModal__container .dccCRMModal__warning--box{background-color:#ebeff4;border:1px solid #acbdce;padding:16px 20px;padding:1.6rem 2rem}
+.dccCRMModal__container .dccCRMModal__warning--box2{font-size:0}
+.dccCRMModal__container .dccCRMModal__warning--box2 span{font-size:16px;font-size:1.6rem}
+.dccCRMModal__container .dccCRMModal__error--box{background-color:#f9f2f3;border:1px solid #db0011;padding:16px 20px;padding:1.6rem 2rem}
+.dccCRMModal__container .dccCRMModal__wrapper--hide{display:none !important}
+.dccCRMModal__container .dccCRMModal__unable--font{color:#f41010;margin-right:5px;margin-right:.5rem}
+.dccCRMModal__container .dccCRMModal__icon{display:inline-block;font-size:18px;font-size:1.8rem}
+.dccCRMModal__container .dccCRMModal__flex--text{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-moz-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:start;-moz-box-align:start;-ms-flex-align:start;align-items:flex-start;word-break:break-all}
+.dccCRMModal__container .dccCRMModal__text--afterIcon{padding-top:4px}
+.dccCRMModal__container .dccCRMModal__error{height:initial;width:20px;width:2rem}
+.dccCRMModal__container .dccCRMModal__iconInformation{width:20px;width:2rem}
+.dccCRMModal__container .dccCRMModa__link{display:inline;color:#333;text-decoration:none;font-size:0}
+.dccCRMModal__container .dccCRMModa__link span{font-size:16px;font-size:1.6rem}
+.dccCRMModal__container .dccCRMModa__link i{vertical-align:baseline}
+.dccCRMModal__container .dccCRMModal__link--text{text-decoration:underline;font-size:16px;font-size:1.6rem}
+.dccCRMModal__container .dccCRMModal__icon--group{height:initial;width:27px;width:2.7rem}
+.dccCRMModal__container .dccCRMModal__postion{position:relative;top:-2px}
+.dccCRMModal__container .dccCRMModal__img{width:16px;width:1.6rem;height:16px;height:1.6rem}
+.dccCRMModal__container .dccCRMModal__imgLarge{width:24px;width:2.4rem;height:24px;height:2.4rem}
+.dccCRMModal__container .dccCRMModal__wrapper--top{margin-top:40px;margin-top:4rem}
+.dccCRMModal__container .dccCRMModal__icon--gap{margin-right:10px;margin-right:1rem}
+.dccCRMModal__container .dccCRMModal__text--jade{font-weight:600}
+.dccCRMModal__container .dccCRMModal__text--job{font-weight:300}
+.dccCRMModal__container .dccCRMModal__text--job:lang(en){font-family:"UniversNextforHSBC-Light","Arial",sans-serif}
+.dccCRMModal__container .dccCRMModal__text--notice{line-height:150%}
+.dccCRMModal__container .dccCRMModal__imgLarge--height{height:24px;height:2.4rem}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio</title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "oaM36LgX58uzRRt4T",
+          });
+       })();
+    </script>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Portfolio</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" id="downloadBtn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card"><br>
+                <span>Mallipudi Devi Siva Sai</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Experienced frontend developer with a passion for creating visually stunning
+                   and user-friendly websites.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <a href="#contact"><button class="btn blue-btn">Contact Us</button></a>
+                <button class="btn" id="downloadBtn1" download>Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/siva sai.jpg" alt="avatar">
+            </div>
+          </div>
+          
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col col-md-6 col-lg-6">
+                <div class="image">
+                    <img src="assets/images/siva sai.jpg" alt="avatar">
+                </div>
+            </div>
+            <div class="col col-md-6 col-lg-6">
+                <div class="about-info">
+                    <h3>Summary</h3>
+                    <p style="text-align: justify;">Hi, I'm Mallipudi Devi Siva Sai, a passionate Full Stack Developer with a strong background in building dynamic and responsive web applications.
+                        I have a strong command of Java, Spring Boot, HTML, CSS, and JavaScript. My skill set also includes database management with MySQL and MongoDB.
+                        I believe in writing clean, maintainable code and continuously learning new technologies to stay ahead in the ever-evolving tech landscape. My approach is centered around collaboration and delivering solutions that exceed client expectations.
+                        I hold a Bachelor's degree in Information Technology from VVIT,Guntur and have completed certifications in Full Stack Development.
+                        If you’re interested in working together or just want to connect, feel free to contact me or reach out via LinkedIn. I’m always excited to discuss new projects and opportunities.
+                    </p><br>
+                    <div class="about-btn">
+                        <button class="btn" id="downloadBtn2">Download CV <i class="uil uil-import"></i></button>
+                    </div>
+                    
+                    <br>
+                    <div class="social_icons">
+                        <div class="icon"><a href="https://www.instagram.com/itz_siva_sai_?igsh=dXFnNW02YjB5OGg=" class="uil uil-instagram"></a></div>
+                        <div class="icon"><a href="https://www.linkedin.com/in/mallipudi-devi-siva-sai-913987249" class="uil uil-linkedin-alt"></a></div>
+                        <div class="icon"><a href="https://www.facebook.com/sivasai.mallipudi.14?mibextid=ZbWKwL" class="uil uil-facebook"></a></div>
+                        <div class="icon"><a href="https://github.com/sivasai1000" class="uil uil-github-alt"></a></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+          
+       </section>
+ <!-- -------------- Skill BOX ---------------- -->
+ <section class="section" id="skills">
+    <div class="top-header">
+        <h1>Skills</h1>
+    </div>
+    <div class="project-container">
+        
+ <div class="skills-list">
+    <div class="skills__data">
+        <div class="skills__titles">
+            <h3 class="skills__name"><img src="/assets/images/html.png" class="skills__logo" width="25px" alt=""> HTML</h3>
+            <span class="skills__number">95%</span>
+        </div>
+        <div class="skills__bar">
+            <span class="skills__percentage skills__html"></span>
+        </div>
+    </div>
+    <div class="skills__data">
+        <div class="skills__titles">
+            <h3 class="skills__name"><img src="/assets/images/css.png" class="skills__logo" width="20px" alt=""> CSS</h3>
+            <span class="skills__number">90%</span>
+        </div>
+        <div class="skills__bar">
+            <span class="skills__percentage skills__css"></span>
+        </div>
+    </div>
+    <div class="skills__data">
+        <div class="skills__titles">
+            <h3 class="skills__name"><img src="/assets/images/javascript.png" class="skills__logo" width="20px" alt=""> JavaScript</h3>
+            <span class="skills__number">80%</span>
+        </div>
+        <div class="skills__bar">
+            <span class="skills__percentage skills__js"></span>
+        </div>
+    </div>
+    <div class="skills__data">
+        <div class="skills__titles">
+            <h3 class="skills__name"><img src="/assets/images/react.png" class="skills__logo" width="20px" alt=""> React</h3>
+            <span class="skills__number">75%</span>
+        </div>
+        <div class="skills__bar">
+            <span class="skills__percentage skills__react"></span>
+        </div>
+    </div>
+    <div class="skills__data">
+        <div class="skills__titles">
+            <h3 class="skills__name"><img src="/assets/images/bootstrap-logo.png" class="skills__logo" width="20px" alt=""> Bootstrap</h3>
+            <span class="skills__number">95%</span>
+        </div>
+        <div class="skills__bar">
+            <span class="skills__percentage skills__Bootstrap"></span>
+        </div>
+    </div>
+    <div class="skills__data">
+        <div class="skills__titles">
+            <h3 class="skills__name"><img src="/assets/images/java-logo-vector.png" class="skills__logo" width="20px" alt=""> Java</h3>
+            <span class="skills__number">85%</span>
+        </div>
+        <div class="skills__bar">
+            <span class="skills__percentage skills__java"></span>
+        </div>
+    </div>
+    
+        <div class="skills__data">
+            <div class="skills__titles">
+                <h3 class="skills__name"><img src="/assets/images/sql.png" class="skills__logo" width="20px" alt=""> MYSQL</h3>
+                <span class="skills__number">90%</span>
+            </div>
+            <div class="skills__bar">
+                <span class="skills__percentage skills__mysql"></span>
+            </div>
+        </div>
+        <div class="skills__data">
+            <div class="skills__titles">
+                <h3 class="skills__name"><img src="/assets/images/spring boot.png" class="skills__logo" width="20px" alt=""> Spring Boot</h3>
+                <span class="skills__number">90%</span>
+            </div>
+            <div class="skills__bar">
+                <span class="skills__percentage skills__springboot"></span>
+            </div>
+        </div>
+    
+ </div>
+    </div>
+
+ </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                
+                <h3 style="text-align: center;">Travel Explorer: A Tourism Website</h3>
+                <br><br><br>
+                <a href="https://github.com/sivasai1000/Travel-Explorer.git">Learn More <i class="fa-solid fa-greater-than"></i></a>
+            </div>
+            <div class="project-box">
+                
+                <h3 style="text-align: center;">Early Detection: Machine Learning Techniques In Pancreatic
+                    Cancer Diagnosis</h3>
+                <a href="https://github.com/sivasai1000/EARLY-DETECTION-MACHINE-LEARNING-TECHNIQUES-IN-PANCREATIC-CANCER.git">Learn More <i class="fa-solid fa-greater-than"></i></a>
+            </div>
+            <div class="project-box">
+                
+                <h3 style="text-align: center;">Enhancing Online Security:Random Forest Classifier Approach
+                    to Payment Fraud Detection</h3>
+                <a href="https://github.com/sivasai1000/Online-Payment-Fraud-detection.git">Learn More <i class="fa-solid fa-greater-than"></i></a>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: sivasaimallipudi9h@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +91 8309220441</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Address : KPHB,Hyderabad-500085</p>
+                    
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" id="name" placeholder="Name" >
+                        <input type="text" class="input-field" id="email" placeholder="Email" >
+                    </div>
+                    <div class="text-area">
+                        <textarea id="message" placeholder="Message" ></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn" onclick="sendMail()">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+   </div>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.instagram.com/itz_siva_sai_?igsh=dXFnNW02YjB5OGg=" class="uil uil-instagram"></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/mallipudi-devi-siva-sai-913987249" class="uil uil-linkedin-alt"></a></div>
+            <div class="icon"><a href="https://www.facebook.com/sivasai.mallipudi.14?mibextid=ZbWKwL" class="uil uil-facebook"></a></div>
+            <div class="icon"><a href="https://github.com/sivasai1000" class="uil uil-github-alt"></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">siva sai</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

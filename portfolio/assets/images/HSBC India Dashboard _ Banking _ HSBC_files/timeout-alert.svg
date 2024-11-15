@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="27px" viewBox="0 0 30 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Status / Contextual / Error</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UK_L-Navigatingaway_session_timout" transform="translate(-450.000000, -217.000000)">
+            <g id="Icon-/-Status-/-Contextual-/-Error" transform="translate(450.000000, 216.000000)">
+                <g id="New" transform="translate(0.000000, 1.666667)">
+                    <path d="M29.8185223,24.1925 L16.1518557,0.6625 C15.6385223,-0.220833333 14.3618557,-0.220833333 13.8485223,0.6625 L0.181855673,24.1925 C-0.333144327,25.0791667 0.306855673,26.1925 1.33352234,26.1925 L28.6668557,26.1925 C29.6935223,26.1925 30.3335223,25.0808333 29.8185223,24.1925 Z" id="Path" fill="#A8000B" fill-rule="nonzero"></path>
+                    <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="13.3335223 7.05083333 16.6668557 7.05083333 16.6668557 16.1925 13.3335223 16.1925"></polygon>
+                    <path d="M15.000189,23.4025 C13.850189,23.4025 12.9168557,22.4691667 12.9168557,21.3191667 C12.9168557,20.1691667 13.850189,19.2358333 15.000189,19.2358333 C16.150189,19.2358333 17.0835223,20.1691667 17.0835223,21.3191667 C17.0835223,22.4708333 16.150189,23.4025 15.000189,23.4025 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

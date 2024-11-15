@@ -1,0 +1,21 @@
+var utagLoadInterval=setInterval(function(){if(window.utag!==undefined&&window.utag.track!==undefined&&utag_data!==undefined){window.utag.track("view",utag_data);
+clearInterval(utagLoadInterval)
+}});
+$("document").ready(function(){var b=jQuery("#dcc-left-nav-links-group ul"),c=jQuery(".header-icon","#main-component-page"),a="navigation dropdown";
+if(jQuery("#headericona11ytext")&&jQuery("#headericona11ytext").length>0){a=jQuery("#headericona11ytext").attr("data-a11ytxt");
+if(a){a=JSON.parse(jQuery("#headericona11ytext").attr("data-a11ytxt"))["lhnheaderIconA11ytext"]
+}}jQuery(b).clone().insertAfter(c).addClass("dropdown-menu");
+c.on("click",function(){setTimeout(function(){jQuery(".dropdown-menu.show").css("top","16px").css("left","3px").css("-webkit-transform","translate3d(-4px, 22px, 0px)")
+},0)
+});
+window.onresize=function(){setTimeout(function(){jQuery(".leftLinks.dropdown-menu","#main-component-page").css("top","").css("top","16px").css("-webkit-transform","translate3d(-4px, 22px, 0px)");
+jQuery(".dropdown-menu.show").css("left","3px")
+},0);
+jQuery(".leftLinks.dropdown-menu","#main-component-page").removeClass("show");
+jQuery(".header-icon.dropdown-toggle","#main-component-page").attr("aria-expanded",false)
+};
+c.addClass("dropdown-toggle").attr({"data-toggle":"dropdown",role:"button",tabindex:"0","aria-haspopup":"true","aria-label":a,id:"dropdownMenuLink"});
+c.on("keydown",function(d){if(d.keyCode===32){setTimeout(function(){jQuery(".dropdown-menu","#main-component-page").find("a").first().focus()
+},0)
+}})
+});

@@ -1,0 +1,138 @@
+var DccKYC=(function(){var h="";
+var j=[];
+var b="false";
+var e="";
+var i="";
+function g(){this.newModal=null;
+this.fragment=null;
+this.templateHtml=null
+}g.prototype.init=function(){console.log("configuration=>"+document.getElementById("kycConfig").getAttribute("value"));
+if(typeof cpiUtils!=="undefined"){j=cpiUtils.getCookieValue("kycInfo-hint")?cpiUtils.getCookieValue("kycInfo-hint").split("&"):[];
+for(var m=0;
+m<j.length;
+m++){if(j[m].indexOf("f=")!==-1){b=j[m].replace("f=","")
+}if(j[m].indexOf("r=")!==-1){e=j[m].replace("r=","")
+}if(j[m].indexOf("d=")!==-1){i=j[m].replace("d=","")
+}}var l=JSON.parse(document.getElementById("kycConfig").getAttribute("value")).enableKYC;
+if(l.toString().toLowerCase()==="yes"){if(b==="true"){a()
+}}}};
+function a(){var l=JSON.parse(document.getElementById("kycConfig").getAttribute("value")).kycFragmentUrl;
+cpiUtils.minimalAjax(l.toString()+".html?wcmmode=disabled",d.bind(null,l.toString()),c)
+}function c(){}function d(l,p){var o=cpiUtils.modal.getNewModal();
+var n=document.createRange().createContextualFragment(p);
+var m=n.querySelectorAll("[data-kyc-dialog-close-btn]");
+cpiUtils.forEach(m,function(q,r){cpiUtils.eventHandler.addEvent(r,"click",f.bind(null,o))
+});
+cpiUtils.eventHandler.addEvent(n.querySelector("dialog"),"close",f.bind(null,o));
+o.querySelector("dialog").appendChild(n);
+cpiUtils.modal.show(o);
+h=document.getElementById("navigation").innerHTML;
+switch(e){case"ELIGIBLE_KYC_ABOUT_TO_DUE":document.getElementById("noticeBeforeDueDate").style.display="block";
+document.getElementById("noticeBeforeDueDate").innerHTML=document.getElementById("noticeBeforeDueDate").innerHTML.replace("&lt;x&gt;",i);
+break;
+case"ELIGIBLE_KYC_OVERDUE":document.getElementById("noticeAfterDueDate").style.display="block";
+document.getElementById("noticeAfterDueDate").innerHTML=document.getElementById("noticeAfterDueDate").innerHTML.replace("&lt;x&gt;",i);
+break;
+case"ELIGIBLE_KYC_ABOUT_TO_BE_BLOCKED":document.getElementById("noticeFinal").style.display="block";
+document.getElementById("noticeFinal").innerHTML=document.getElementById("noticeFinal").innerHTML.replace("&lt;x&gt;",i);
+break;
+default:document.getElementById("noticeDefault").style.display="block";
+document.getElementById("noticeDefault").innerHTML=document.getElementById("noticeDefault").innerHTML.replace("&lt;x&gt;",i)
+}document.getElementById("update-now-btn").addEventListener("click",k)
+}function f(m){var l="f=defer&r="+e+"&d="+i;
+cpiUtils.setCookieValue("kycInfo-hint",l,"");
+cpiUtils.modal.hide(m,true)
+}function k(){location.href=h
+}document.addEventListener("DOMContentLoaded",g.prototype.init)
+})();
+var DccContactRM=(function(){var b={};
+function a(){this.newModal=null;
+this.fragment=null;
+this.templateHtml=null;
+this.crmDialogTagDiv=null;
+this.dataCRMConfig=null
+}a.prototype.crmTealiumEvent={getCommonTMSAttribute:function(c,g){var f=a.crmDialogTagDiv.getAttribute("data-crm-tms-"+c+"-event-content");
+var e=a.crmDialogTagDiv.getAttribute("data-crm-tms-"+c+"-event-subcategory");
+var d=(g&&c==="missing")?(f+g):f;
+return{event_category:a.crmDialogTagDiv.getAttribute("data-crm-tms-"+c+"-event-category"),event_subcategory:(c==="error")?g:e,event_action:a.crmDialogTagDiv.getAttribute("data-crm-tms-"+c+"-event-action"),event_content:d,raw_datalayer:a.crmDialogTagDiv.getAttribute("data-crm-tms-"+c+"-raw-datalayer")}
+},setTrackView:function(f,g){var e=a.prototype.crmTealiumEvent.getCommonTMSAttribute(f,g);
+var c=window.utag_data;
+var d={tealium_event:a.crmDialogTagDiv.getAttribute("data-crm-tms-events"),page_language:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-language"),page_url:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-url"),page_name:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-name"),page_subcategory:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-subcategory"),page_type:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-type"),page_category:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-category"),page_customer_group:a.crmDialogTagDiv.getAttribute("data-crm-tms-page-customer-group"),site_section:a.crmDialogTagDiv.getAttribute("data-crm-tms-site-section"),customer_group:c.customer_group?c.customer_group:"",page_security_level:c.page_security_level?c.page_security_level:"",event_category:e.event_category,event_subcategory:e.event_subcategory,event_action:e.event_action,event_content:e.event_content,raw_datalayer:e.raw_datalayer};
+if(window.TMS&&window.TMS.trackView){window.TMS.trackView(d)
+}}};
+a.prototype.crmMergeResData=function(d){var c;
+for(c in d){if(Object.prototype.toString.call(d[c])==="[object String]"){if(!b.hasOwnProperty(c)){b[c]=d[c]
+}else{b["errorStack"+c]=d[c]
+}}else{if(Object.prototype.toString.call(d[c])==="[object Array]"){if(typeof d[c][0]==="string"){if(!b.hasOwnProperty(c)){b[c]=d[c][0]
+}else{b["errorStack"+c]=d[c][0]
+}}else{a.prototype.crmMergeResData(d[c][0])
+}}else{a.prototype.crmMergeResData(d[c])
+}}}return b
+};
+a.prototype.getFormattedCRMValues=function(d,e){var c=a.prototype.crmMergeResData(d);
+cpiUtils.forEach(e,function(f,g){if(!c[g.key]){c[g.key]=g.defaultStr
+}});
+return c
+};
+a.prototype.crmHideModal=function(){cpiUtils.modal.hide(a.newModal)
+};
+a.prototype.crmShowModal=function(){var d=document.getElementById("dccCRMModalContainer");
+var c;
+if(!d){return
+}c=d.querySelector(".cpi-modal-dialog__close-icon");
+cpiUtils.modal.show(a.newModal,null,c)
+};
+a.prototype.crmPrepareModal=function(){a.newModal=cpiUtils.modal.getNewModal();
+a.newModal.querySelector("dialog").appendChild(a.fragment);
+cpiUtils.forEach(a.newModal.querySelectorAll("[data-crm-dialog-close-btn]"),function(c,d){cpiUtils.eventHandler.addEvent(d,"click",a.prototype.crmHideModal)
+});
+a.prototype.crmShowModal()
+};
+a.prototype.responseMissingHandling=function(c){var d=true;
+cpiUtils.forEach(a.dataCRMConfig.sucCandidateKeyArray,function(e,f){if(!c[f.key]&&f.id&&a.fragment.querySelector("#"+f.id)){a.fragment.querySelector("#"+f.id).classList.remove("dccCRMModal__wrapper--hide");
+if(f.hideWholeFieldIfNoVal){a.fragment.querySelector("div[data-crm-"+f.key+"]").classList.add("dccCRMModal__wrapper--hide")
+}if(f.tealiumUnableKey){d=false;
+a.prototype.crmTealiumEvent.setTrackView("missing",f.tealiumUnableKey)
+}}});
+if(d){a.prototype.crmTealiumEvent.setTrackView("success")
+}};
+a.prototype.handlingForCustomerSegmentType=function(c){if(a.fragment.querySelector("div[data-crm-rmNotice]")&&!c.jadeMembershipIdentifier&&a.dataCRMConfig.jade.hideRMNoticeFieldIfNoVal){a.fragment.querySelector("div[data-crm-rmNotice]").classList.add("dccCRMModal__wrapper--hide")
+}if(a.fragment.querySelector("div[data-crm-rmNotice]")&&c.segmentCode===a.dataCRMConfig.premier.segmentCode){a.fragment.querySelector("div[data-crm-jadeMembershipIdentifier]").classList.add("dccCRMModal__wrapper--hide")
+}};
+a.prototype.crmApiSuccessCallback=function(e){var d=JSON.parse(e);
+var c=a.prototype.getFormattedCRMValues(d,a.dataCRMConfig.sucCandidateKeyArray);
+if(c[a.dataCRMConfig.RMIDField]){a.templateHtml=cpiUtils.templateReplace(a.templateHtml,c);
+a.fragment=document.createRange().createContextualFragment(a.templateHtml);
+a.fragment.querySelector("#dccCRMModalFragment").classList.remove("dccCRMModal__wrapper--hide");
+a.prototype.responseMissingHandling(c);
+a.prototype.handlingForCustomerSegmentType(c)
+}else{a.fragment.querySelector("#dccCRMModalWarning").classList.remove("dccCRMModal__wrapper--hide");
+if(a.dataCRMConfig.showHotlineIcon){a.fragment.querySelector("#dccCRMHotlineIcon").classList.remove("dccCRMModal__wrapper--hide")
+}a.prototype.crmTealiumEvent.setTrackView("warn")
+}a.prototype.crmPrepareModal()
+};
+a.prototype.crmApiErrorCallback=function(d,f){var c=f?JSON.parse(f):"";
+var e=c?a.prototype.getFormattedCRMValues(c,a.dataCRMConfig.errCandidateKeyArray):{errorInfo:"code",code:""};
+a.templateHtml=cpiUtils.templateReplace(a.templateHtml,e);
+a.fragment=document.createRange().createContextualFragment(a.templateHtml);
+a.fragment.querySelector("#dccCRMModalError").classList.remove("dccCRMModal__wrapper--hide");
+a.prototype.crmPrepareModal();
+a.prototype.crmTealiumEvent.setTrackView("error",e.code)
+};
+a.prototype.crmTemplateSuccessCallback=function(c){var d;
+a.templateHtml=c;
+a.fragment=document.createRange().createContextualFragment(c);
+a.crmDialogTagDiv=a.fragment.querySelector("#dccCRMModalDialogTagging");
+d=a.fragment.querySelector("div[data-crm-modal]").getAttribute("data-crm-modal");
+a.dataCRMConfig=JSON.parse(a.fragment.querySelector("div[data-crm-config]").getAttribute("data-crm-config"));
+cpiUtils.minimalAjax(d,a.prototype.crmApiSuccessCallback,a.prototype.crmApiErrorCallback)
+};
+a.prototype.crmTemplateErrorCallback=function(){};
+a.prototype.crmGetTemplate=function(c,d){if(a.newModal){a.prototype.crmShowModal()
+}else{cpiUtils.minimalAjax(d.fragmentUrl,a.prototype.crmTemplateSuccessCallback,a.prototype.crmTemplateErrorCallback)
+}};
+a.prototype.init=function(){if(typeof cpiUtils!=="undefined"){cpiUtils.topic.subscribe("dcc-cpi.crm",a.prototype.crmGetTemplate)
+}};
+a.prototype.init();
+return new a()
+})();
